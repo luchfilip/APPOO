@@ -20,6 +20,12 @@ public class Htag {
                          "</h"+ hashTagCount + ">";
              }
          }
+        if (line.contains("##")) {
+            line = line.replace("##", "");
+            line = "<h2>" +
+                    line +
+                    "</h2>";
+        }
      return line;
  }
 }
